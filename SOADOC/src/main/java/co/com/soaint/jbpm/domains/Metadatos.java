@@ -1,4 +1,4 @@
-package co.com.foundation.client.rs.produccion.model;
+package co.com.soaint.jbpm.domains;
 
 import java.io.Serializable;
 

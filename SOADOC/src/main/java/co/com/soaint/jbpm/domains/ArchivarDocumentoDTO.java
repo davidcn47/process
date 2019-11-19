@@ -1,4 +1,4 @@
-package co.com.foundation.client.rs.correspondencia.model;
+package co.com.soaint.jbpm.domains;
 
 import java.io.Serializable;
 
