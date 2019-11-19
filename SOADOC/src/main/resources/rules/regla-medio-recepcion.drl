@@ -1,6 +1,6 @@
 package rules
  
-import co.com.soaint.sgd.model.MedioRecepcion
+import co.com.soaint.jbpm.domains.MedioRecepcion;
 
 
 rule "Oficio"
@@ -27,7 +27,7 @@ then
  update( medioRecepcion );
 end
 
-rule "Derecho de Petición"
+rule "Derecho de Peticiï¿½n"
 no-loop true
 when
 medioRecepcion : MedioRecepcion($codMedio : codMedioRecepcion == "TL-DOCDP" )
@@ -39,7 +39,7 @@ then
  update( medioRecepcion );
 end
 
-rule "Invitación"
+rule "Invitaciï¿½n"
 no-loop true
 when
 medioRecepcion : MedioRecepcion($codMedio : codMedioRecepcion == "TL-DOCII" )
@@ -74,7 +74,7 @@ then
 	 medioRecepcion.setInicioConteo("DSH");   
  update( medioRecepcion );
 end
-rule "Investigación"
+rule "Investigaciï¿½n"
 no-loop true
 when
 medioRecepcion : MedioRecepcion($codMedio : codMedioRecepcion == "TL-DOCIE" )

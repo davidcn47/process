@@ -1,7 +1,7 @@
 //created on: Aug 22, 2017
 package rules
 
-import co.com.soaint.sgd.model.Redireccion
+import co.com.soaint.jbpm.domains.Redireccion;
 
 
 rule "Redireccionar"
