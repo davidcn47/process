@@ -1,8 +1,8 @@
 package co.com.soaint.jbpm.rs.correspondencia;
 
 import co.com.soaint.jbpm.constants.EstadosRespuesta;
-import co.com.soaint.jbpm.rs.correspondencia.model.Correspondencia;
-import co.com.saoint.jbpm.util.SystemParameters;
+import co.com.soaint.jbpm.domains.Correspondencia;
+import co.com.soaint.jbpm.util.SystemParameters;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.client.RestTemplate;
 

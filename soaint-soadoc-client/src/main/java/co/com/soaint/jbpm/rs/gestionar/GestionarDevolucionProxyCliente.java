@@ -3,7 +3,6 @@ package co.com.soaint.jbpm.rs.gestionar;
 import co.com.soaint.jbpm.constants.EstadosRespuesta;
 import co.com.soaint.jbpm.domains.InvocarSignal;
 import co.com.soaint.jbpm.util.SystemParameters;
-import co.com.soaint.foundation.canonical.bpm.EntradaProcesoDTO;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
@@ -39,7 +38,7 @@ public class GestionarDevolucionProxyCliente {
      * @param entrada Objeto que contiene los datos para llamada a la sennal
      * @return ENUM con estado OK o Fallo teniendo en cuenta la respuesta del servicio
      */
-    public String enviarSennal(InvocarSignal entrada ) {
+    public String enviarSennal(InvocarSignal entrada) {
         log.info("inicio - ejecutando  - enviarSennalGestorDevoluciones : {}, {}", entrada, endpointGateway);
         try {
             MultiValueMap<String, String> headers = new LinkedMultiValueMap<String, String>();
@@ -50,7 +49,7 @@ public class GestionarDevolucionProxyCliente {
             restTemplate.postForLocation(endpointGateway, request);
             return EstadosRespuesta.OK.name();
         } catch (Exception e) {
-            log.error("error ejecutando enviarSennal - enviarSennal: {}"+endpointGateway);
+            log.error("error ejecutando enviarSennal - enviarSennal: {}" + endpointGateway);
             return EstadosRespuesta.FALLO.name();
         } finally {
             log.info("fin - ejecutando enviarSennalGestorDevoluciones - enviarSennalGestorDevoluciones : {}", entrada);

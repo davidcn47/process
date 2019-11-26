@@ -1,9 +1,7 @@
 package co.com.soaint.jbpm.rs.produccion;
 
 import co.com.soaint.jbpm.constants.EstadosRespuesta;
-import co.com.soaint.jbpm.rs.gestionar.model.InvocarSignal;
-import co.com.soaint.jbpm.rs.produccion.model.Metadatos;
-import co.com.soaint.jbpm.util.SystemParameters;
+import co.com.soaint.jbpm.domains.Metadatos;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;

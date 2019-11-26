@@ -15,7 +15,7 @@ public class DistribucionElectronicaProxyCliente {
     private final String endpoint;
     private RestTemplate restTemplate;
 
-    public DistribucionElectronicaProxyCliente(){
+    public DistribucionElectronicaProxyCliente() {
         endpoint = "http://".concat(SystemParameters.getParameter(SystemParameters.BUSINESS_PLATFORM_ENDPOINT)).concat("/correspondencia-business-services/services/correspondencia-web-api/correspondencia/enviar-correo/");
         restTemplate = new RestTemplate();
 

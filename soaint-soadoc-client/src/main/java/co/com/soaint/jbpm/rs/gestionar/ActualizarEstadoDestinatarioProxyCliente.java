@@ -1,7 +1,7 @@
 package co.com.soaint.jbpm.rs.gestionar;
 
 import co.com.soaint.jbpm.constants.EstadosRespuesta;
-import co.com.soaint.jbpm.rs.gestionar.model.Agente;
+import co.com.soaint.jbpm.domains.Agente;
 import co.com.soaint.jbpm.util.SystemParameters;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.client.RestTemplate;

@@ -1,7 +1,7 @@
 package co.com.soaint.jbpm.rs.correspondencia;
 
 import co.com.soaint.jbpm.constants.EstadosRespuesta;
-import co.com.soaint.jbpm.rs.correspondencia.model.Documento;
+import co.com.soaint.jbpm.domains.Documento;
 import co.com.soaint.jbpm.util.SystemParameters;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.client.RestTemplate;
