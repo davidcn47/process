@@ -1,9 +1,0 @@
-.idea/
-.settings/
-.metadata/
-.recommenders/
-target/
-*.iml
-*.project
-*.classpath
-*.springBeans
