@@ -85,7 +85,8 @@
       "name" : "MyCustonHandler",
       "parameters" : [
           "Parameter" : new ObjectDataType(),
-          "Operation" : new StringDataType()
+          "Operation" : new StringDataType(),
+          "Term": new StringDataType()
          
       ],
       "results" : [
