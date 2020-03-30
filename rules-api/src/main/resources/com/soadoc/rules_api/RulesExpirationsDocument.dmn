@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_05FBE7D5-5549-4D6A-99B0-2533582DCEB2" name="RulesExpirationsDocument" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_9DB3E926-9976-4063-8F46-BC00A736939B">
+  <dmn:extensionElements/>
+  <dmn:decision id="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" name="response">
+    <dmn:extensionElements/>
+    <dmn:variable id="_F9DEDB70-71FE-4B74-BB08-0BBD7C2B546F" name="response" typeRef="string"/>
+    <dmn:informationRequirement id="_EF3D4118-D105-43B6-BA6F-626C73AED8A9">
+      <dmn:requiredInput href="#_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_EE1988B9-7C6B-414C-B728-C34E94FC5B3F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_75552B50-D2BE-4F9F-BBC0-11B5AF331CC0">
+        <dmn:inputExpression id="_C247C4A4-D7D5-4953-B875-32BF6D97DE89" typeRef="string">
+          <dmn:text>documentType</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_EBEF4529-F8FB-494C-9350-E331895DD784" typeRef="string"/>
+      <dmn:rule id="_A67A2327-7EDE-4770-BA68-02D022D6E880">
+        <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
+        <dmn:inputEntry id="_39B63AAE-B3D3-4974-8A5A-8299CC5CF7C2">
+          <dmn:text>"Tutela"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B4054B3C-9D19-4B58-9B70-AB6EFCB1A455">
+          <dmn:text>{
+	"quantity": "5",
+	"typeDocument": "Tutela",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_88561D9E-89D5-424E-95EC-FB2F98E6CE83">
+        <dmn:description>"Tiempo de Vencimiento Documentos"</dmn:description>
+        <dmn:inputEntry id="_CB8E049D-B4F0-4C41-A62C-4037C34F33F1">
+          <dmn:text>"Oficio"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_22737868-438C-49A5-849A-72169CC09724">
+          <dmn:text>{
+	"quantity": "0",
+	"typeDocument": "Oficio",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_9F5FCEDE-7EF2-4E10-A34A-F84A300960D8">
+        <dmn:inputEntry id="_116B575B-115E-4545-8765-7356DB30DDED">
+          <dmn:text>"Derecho de Petición"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1FEC720C-BB29-4368-B283-1B777EDD526D">
+          <dmn:text>{
+	"quantity": "3",
+	"typeDocument": "Derecho de Petición",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_EF779100-7F40-4657-A6F1-993E585264A6">
+        <dmn:inputEntry id="_2B3DCB7F-17B3-4FCD-ACB7-E00451CB123F">
+          <dmn:text>"Invitación"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1D0D0EA7-4387-47B4-B7A8-296BAB5B5ECA">
+          <dmn:text>{
+	"quantity": "10",
+	"typeDocument": "Invitación",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_4AD0958C-1C68-48D1-9C6F-97468E168848">
+        <dmn:inputEntry id="_2EF646CD-FCD7-49EC-BCAC-751F43482D9A">
+          <dmn:text>"Demanda"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_06B0A408-83C0-48D3-BE5D-C754959D906F">
+          <dmn:text>{
+	"quantity": "6",
+	"typeDocument": "Demanda",
+	"unitTime": "Horas",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B2B6C5B7-9112-4385-A0A8-9A626057AEEB">
+        <dmn:inputEntry id="_C26EA190-427F-402F-BC0C-84C71DC2FB7C">
+          <dmn:text>"Factura"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E6260D73-E8B1-4D2F-B502-2C9DE56EF701">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Factura",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_F45063CC-BC16-4232-B81B-3478C70E5A11">
+        <dmn:inputEntry id="_CA370B2C-5BC0-4520-97BB-BE7AE6EB791A">
+          <dmn:text>"Investigación"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_3C9C0619-5FAB-4716-9253-EFF3B1FB5E6F">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Investigación",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_1F4055B2-C502-46BA-B0FC-B87E84B27B96">
+        <dmn:inputEntry id="_017D4940-EC47-4572-9E05-AB5EA95A4EC6">
+          <dmn:text>"Denuncias"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_90FFE1C4-A7D3-4301-8B03-57A911EA6D36">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Denuncias",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_615C52C3-A95C-4D66-BE9A-E83A83B65207">
+        <dmn:inputEntry id="_1A30F0AD-ABFB-439C-89BF-A07AE37CC867">
+          <dmn:text>"Recursos"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EB66569F-7F8C-42AE-B451-9CDF0F7420AB">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Recursos",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_1016E3FE-3626-4479-8246-12521A5802B2">
+        <dmn:inputEntry id="_9C2876D7-B7AB-4D50-A942-C41D17320495">
+          <dmn:text>"PQRSD"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_616353D8-D800-4702-8080-688CC4788A6A">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "PQRSD",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_6CD48851-6EBC-4863-A9DC-D87BDB64BE6A">
+        <dmn:inputEntry id="_58943800-764B-4980-857B-81857A86213B">
+          <dmn:text>"Acta"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_92EE3890-650E-4CEC-B028-F7BB9CC312E3">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Acta",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_73F75BB9-48C8-432B-8017-5E6B22E86A58">
+        <dmn:inputEntry id="_32B4CFA2-D97F-42A8-8B88-7462F7F1CD6C">
+          <dmn:text>"Circular"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E724E446-7EBA-445A-B8DC-4D9BEB3C087E">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Circular",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_B08595F7-671E-4ED1-93A3-5A448AA352A3">
+        <dmn:inputEntry id="_636294FE-4CF0-4430-900B-A42B5DAEF941">
+          <dmn:text>"Memorando"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_9EA09220-7B75-45D1-9923-D7C8006CC105">
+          <dmn:text>{
+	"quantity": "4",
+	"typeDocument": "Memorando",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+  <dmn:inputData id="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" name="documentType">
+    <dmn:extensionElements/>
+    <dmn:variable id="_AF72E2C3-F71A-49E0-A42F-32974E833A72" name="documentType"/>
+  </dmn:inputData>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_EE1988B9-7C6B-414C-B728-C34E94FC5B3F">
+            <kie:width>50.0</kie:width>
+            <kie:width>216.0</kie:width>
+            <kie:width>417.0</kie:width>
+            <kie:width>119.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" dmnElementRef="_DA5A4415-7C57-49D4-9DCC-F9F5268EE3C8" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="194" y="164" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" dmnElementRef="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="194" y="45" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_EF3D4118-D105-43B6-BA6F-626C73AED8A9" dmnElementRef="_EF3D4118-D105-43B6-BA6F-626C73AED8A9">
+        <di:waypoint x="244" y="95"/>
+        <di:waypoint x="244" y="164"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>
