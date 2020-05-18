@@ -11,8 +11,8 @@
     <globals/>
     <work-item-handlers>
         <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new co.com.soaint.bpmhandlerapidigitalizacion.controler.CustomWorkItemHandler()</identifier>
+            <resolver>reflection</resolver>
+            <identifier>co.com.soaint.bpmhandlerapidigitalizacion.controler.CustomWorkItemHandler</identifier>
             <parameters/>
             <name>MyCustonHandler</name>
         </work-item-handler>

@@ -35,9 +35,9 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_22737868-438C-49A5-849A-72169CC09724">
           <dmn:text>{
-	"quantity": "0",
+	"quantity": "15",
 	"typeDocument": "Oficio",
-	"unitTime": "Dias",
+	"unitTime": "Minutos",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
@@ -74,7 +74,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_06B0A408-83C0-48D3-BE5D-C754959D906F">
           <dmn:text>{
-	"quantity": "6",
+	"quantity": "3",
 	"typeDocument": "Demanda",
 	"unitTime": "Horas",
  "enable": "false"
@@ -165,9 +165,22 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_E724E446-7EBA-445A-B8DC-4D9BEB3C087E">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "12",
 	"typeDocument": "Circular",
-	"unitTime": "Dias",
+	"unitTime": "Horas",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_43519A37-6EE9-4212-BDE3-3AD2E29C630B">
+        <dmn:inputEntry id="_6C54EE78-3091-4BD0-91AF-7B5E13A65E39">
+          <dmn:text>"Ejemplo"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_03B0EDD6-5B7B-43C2-B3C0-B9761A130952">
+          <dmn:text>{
+	"quantity": "7",
+	"typeDocument": "Ejemplo",
+	"unitTime": "Horas",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
@@ -209,7 +222,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="194" y="164" width="100" height="50"/>
+        <dc:Bounds x="195" y="172" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" dmnElementRef="_ECE4D6CE-8CA7-4FF9-8233-6921B32B5663" isCollapsed="false">
@@ -223,7 +236,7 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_EF3D4118-D105-43B6-BA6F-626C73AED8A9" dmnElementRef="_EF3D4118-D105-43B6-BA6F-626C73AED8A9">
         <di:waypoint x="244" y="95"/>
-        <di:waypoint x="244" y="164"/>
+        <di:waypoint x="245" y="172"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
