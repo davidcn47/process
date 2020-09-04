@@ -79,21 +79,6 @@
      "displayName" : "Decision Task",
      "icon" : "defaultdecisionicon.png",
      "category" : "Decision tasks"
-   ],
-   
-   [
-       "name" : "MyCustonHandler",
-       "parameters" : [
-           "idBatch" : new StringDataType(),
-           "Operation" : new StringDataType(),
-           "nomUser": new StringDataType()
-           
-       ],
-       "results" : [
-           "Resultado" : new ObjectDataType("java.util.Map"),
-       ],
-       "displayName" : "MyCustonHandler",
-       "icon" : ""
    ]
 
 ]
