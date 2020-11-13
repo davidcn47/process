@@ -4,7 +4,7 @@
       <include>true</include>
       <metadata>
         <id>local</id>
-        <url>/home/soadoc/.m2/repository</url>
+        <url>/home/perso/.m2/repository</url>
         <source>LOCAL</source>
       </metadata>
     </repository>

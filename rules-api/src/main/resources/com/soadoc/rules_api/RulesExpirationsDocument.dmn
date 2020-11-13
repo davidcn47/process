@@ -21,7 +21,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_B4054B3C-9D19-4B58-9B70-AB6EFCB1A455">
           <dmn:text>{
-	"quantity": "5",
+	"quantity": "10",
 	"typeDocument": "Tutela",
 	"unitTime": "Dias",
  "enable": "false"
@@ -35,9 +35,9 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_22737868-438C-49A5-849A-72169CC09724">
           <dmn:text>{
-	"quantity": "15",
+	"quantity": "30",
 	"typeDocument": "Oficio",
-	"unitTime": "Minutos",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
@@ -48,7 +48,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_1FEC720C-BB29-4368-B283-1B777EDD526D">
           <dmn:text>{
-	"quantity": "3",
+	"quantity": "10",
 	"typeDocument": "Derecho de Petición",
 	"unitTime": "Dias",
  "enable": "false"
@@ -61,7 +61,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_1D0D0EA7-4387-47B4-B7A8-296BAB5B5ECA">
           <dmn:text>{
-	"quantity": "10",
+	"quantity": "0",
 	"typeDocument": "Invitación",
 	"unitTime": "Dias",
  "enable": "false"
@@ -74,9 +74,9 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_06B0A408-83C0-48D3-BE5D-C754959D906F">
           <dmn:text>{
-	"quantity": "3",
+	"quantity": "10",
 	"typeDocument": "Demanda",
-	"unitTime": "Horas",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
@@ -87,7 +87,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_E6260D73-E8B1-4D2F-B502-2C9DE56EF701">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "3",
 	"typeDocument": "Factura",
 	"unitTime": "Dias",
  "enable": "false"
@@ -100,7 +100,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_3C9C0619-5FAB-4716-9253-EFF3B1FB5E6F">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "10",
 	"typeDocument": "Investigación",
 	"unitTime": "Dias",
  "enable": "false"
@@ -113,7 +113,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_90FFE1C4-A7D3-4301-8B03-57A911EA6D36">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "15",
 	"typeDocument": "Denuncias",
 	"unitTime": "Dias",
  "enable": "false"
@@ -126,21 +126,8 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_EB66569F-7F8C-42AE-B451-9CDF0F7420AB">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "15",
 	"typeDocument": "Recursos",
-	"unitTime": "Dias",
- "enable": "false"
-}</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-      <dmn:rule id="_1016E3FE-3626-4479-8246-12521A5802B2">
-        <dmn:inputEntry id="_9C2876D7-B7AB-4D50-A942-C41D17320495">
-          <dmn:text>"PQRSD"</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_616353D8-D800-4702-8080-688CC4788A6A">
-          <dmn:text>{
-	"quantity": "4",
-	"typeDocument": "PQRSD",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
@@ -152,7 +139,7 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_92EE3890-650E-4CEC-B028-F7BB9CC312E3">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "30",
 	"typeDocument": "Acta",
 	"unitTime": "Dias",
  "enable": "false"
@@ -165,34 +152,47 @@
         </dmn:inputEntry>
         <dmn:outputEntry id="_E724E446-7EBA-445A-B8DC-4D9BEB3C087E">
           <dmn:text>{
-	"quantity": "12",
+	"quantity": "10",
 	"typeDocument": "Circular",
-	"unitTime": "Horas",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
-      <dmn:rule id="_43519A37-6EE9-4212-BDE3-3AD2E29C630B">
-        <dmn:inputEntry id="_6C54EE78-3091-4BD0-91AF-7B5E13A65E39">
-          <dmn:text>"Ejemplo"</dmn:text>
+      <dmn:rule id="_BB96906E-5C57-4BD2-94B7-75019C1AD204">
+        <dmn:inputEntry id="_707F1D5D-5581-4BF3-8073-1862D56138CF">
+          <dmn:text>"PQS"</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_03B0EDD6-5B7B-43C2-B3C0-B9761A130952">
+        <dmn:outputEntry id="_A8966E7C-AE95-4E62-88CC-C0ACF3A7B87E">
           <dmn:text>{
-	"quantity": "7",
-	"typeDocument": "Ejemplo",
-	"unitTime": "Horas",
+	"quantity": "10",
+	"typeDocument": "PQS",
+	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
-      <dmn:rule id="_B08595F7-671E-4ED1-93A3-5A448AA352A3">
-        <dmn:inputEntry id="_636294FE-4CF0-4430-900B-A42B5DAEF941">
+      <dmn:rule id="_67C1A66A-9A00-4DD3-9311-5E3E70FB6548">
+        <dmn:inputEntry id="_946A0E6B-13F9-4B56-9FF7-BC814BA726D6">
           <dmn:text>"Memorando"</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry id="_9EA09220-7B75-45D1-9923-D7C8006CC105">
+        <dmn:outputEntry id="_72149154-89CA-4655-BAE3-AB2040DD8EEE">
           <dmn:text>{
-	"quantity": "4",
+	"quantity": "10",
 	"typeDocument": "Memorando",
+	"unitTime": "Dias",
+ "enable": "false"
+}</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_0172307A-8E53-4233-AB78-6EF488348E81">
+        <dmn:inputEntry id="_CCCFA6C1-402B-4DD2-86C6-213FF1B009B9">
+          <dmn:text>"Agradecimiento-felicitación"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_604D1309-2385-499B-B5E8-3BB8FFB8E1F4">
+          <dmn:text>{
+	"quantity": "0",
+	"typeDocument": "Agradecimiento-felicitación",
 	"unitTime": "Dias",
  "enable": "false"
 }</dmn:text>
