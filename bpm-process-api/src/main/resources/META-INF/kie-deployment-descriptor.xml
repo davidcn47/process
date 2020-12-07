@@ -11,6 +11,12 @@
     <globals/>
     <work-item-handlers>
         <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
+            <parameters/>
+            <name>Rest</name>
+        </work-item-handler>
+        <work-item-handler>
             <resolver>reflection</resolver>
             <identifier>co.com.soaint.bpm.handler.CustomWorkItemHandler</identifier>
             <parameters/>
